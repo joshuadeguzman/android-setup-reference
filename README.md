@@ -75,3 +75,14 @@ dependencies {
     androidTestImplementation dependencies.espresso
 }
 ```
+**III. Enabling Java 8**
+1. In your application's `build.gradle` file, add the following:
+```
+// build.gradle (app)
+android {
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+}
+```
